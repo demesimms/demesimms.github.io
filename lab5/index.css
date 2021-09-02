@@ -1,7 +1,16 @@
 section {
-    font-family: 'Besley', serif;
+    
     font-size: 25px;
     color: black ;
+    border-style: inset;
+    border-color: #555358;
+    /* text-shadow: black 1px 1px; */
+    font-family: Lato;
+    font-weight: bold;
+    /* height: 300px; */
+  
+
+
     /* text-shadow: 2px 1px whitesmoke;
     text-shadow: 2.1px 1.1px whitesmoke;
     text-shadow: 2.2px 1.2px whitesmoke;
@@ -12,13 +21,12 @@ section {
 
 }
 body{
-    background-color: #50A5B1;
+  background: linear-gradient( white, #50A5B1);
     font-family: 'Lato', sans-serif;
     
 }
 
 .col-9{
-    /* padding-bottom: 50px; */
 }
 
 
@@ -50,15 +58,18 @@ nav li {
 
 nav li a {
   text-decoration: none;
-  color:#FEF6ED;
+  color:black;
   display: block;
   padding: 0.6rem 0.3rem;
-  font-weight: 400;
+  font-weight: 500;
+  text-shadow: #F1703D 1px 1px;
   /* transition: all ease-out 250ms; */
 }
 
-nav li a:hover {
-  color:  #336ca8;
+nav li a:hover, .footer-bar {
+  color:  white;
+  font-size: large;
+  font-weight: bold;
 }
 
 .main-content {
@@ -73,17 +84,19 @@ section {
 }
 
 section:nth-of-type(2n) {
-  background-color: #F1600D;
-  border: 1px;
+  background-color: #F1703D;
+  /* border-style: linear-gradient(red, yellow); */
 }
 
-/* section:last-of-type {
-  height: 100vh;
-} */
+section:last-of-type {
+  height: 67vh;
+}
 
 h1 {
   color: #444;
   font-weight: 600;
+  font-family: 'Besley', serif;
+
 }
 
 .active {
@@ -96,8 +109,10 @@ h1 {
 }
 
 .col-2{
-    margin-left: 700px;
+    /* margin-left: 700px; */
     border: 1px;
+    top: -400px;
+    right: -800px;
 }
 
 .blink_me {
@@ -111,8 +126,51 @@ h1 {
     }
   }
 
-.col-7, .work-title{
+.col-8, p{
     color: white
 }
 
 /* put boxes and make 3-d effect around texts and photos. Different fonts for headers and texts */
+img{
+  border-style: inset;
+  border-color: #555358;
+}
+
+#work-history{
+  height: 650px;
+  width:1300px;
+}
+
+#bio{
+  height: 650px;
+}
+
+h2{
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(35, 35, 255);
+}
+#skills{
+  height: 280px;
+  width: 1000px;
+}
+/* .globe{
+  right:-1200px;
+  top: -500px
+} */
+.footer-bar {
+  background-color: #F1703D;
+  /* width: 1000px; */
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.css{
+  top: -200px;
+  right: -900px;
+}
+#bio{
+  background: linear-gradient(#F1703D, white, #50A5B1);
+}
